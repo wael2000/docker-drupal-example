@@ -5,7 +5,8 @@
 # Depends on subscription-manager correctly being setup on the RHEL 7 host VM that is building this image
 # With a correctly setup RHEL 7 host with subscriptions, those will be fed into the docker image build and yum repos 
 # will become available
-FROM    richxsl/rhel7
+# FROM    richxsl/rhel7
+FROM centos
 MAINTAINER Ben Pritchett <bjpritch@redhat.com>
 
 # Install all the necessary packages for Drupal and our application.  Immediately yum update and yum clean all in this step
