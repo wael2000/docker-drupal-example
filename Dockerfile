@@ -10,4 +10,5 @@ FROM    registry.access.redhat.com/rhscl/php-56-rhel7
 MAINTAINER Ben Pritchett <bjpritch@redhat.com>
 
 #  drush installation
+RUN yum install php-pear
 RUN pear channel-discover pear.drush.org && pear install drush/drush
