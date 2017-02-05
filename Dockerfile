@@ -9,4 +9,5 @@ FROM    registry.access.redhat.com/rhscl/php-56-rhel7
  
 MAINTAINER Ben Pritchett <bjpritch@redhat.com>
 
-CMD ["/bin/bash", "/docker-start.sh"]
+#  drush installation
+RUN pear channel-discover pear.drush.org && pear install drush/drush
